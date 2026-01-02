@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+    <title>Smart Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Smart Task Manager</h2>
+            <button id="tasksBtn">Tasks</button>
+            <button id="codeBtn">code</button>
+        </div>
+
+        <div class="main-content">
+            <!-- Task Section -->
+            <section id="task-section">
+                <form id="task-form">
+                    <input type="text" id="title" placeholder="Task title" required>
+                    <input type="date" id="dueDate" required>
+                    <select id="priority">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                    <input type="text" id="category" placeholder="Category (Work/Personal)">
+                    <button type="submit" class="addBtn">Add Task</button>
+                </form>
+                <div id="task-list"></div>
+            </section>
+
+            <!-- code Section -->
+            <section id="code-section" style="display:none;">
+                <h3>Task Manager JS Code:</h3>
+                <pre class="code-area">
+                    <code class="language-js">
+                        <!-- Task Manager Code Here -->
+                    </code>
+                </pre>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+</body>
+
+</html>
